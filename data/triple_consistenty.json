@@ -16,6 +16,13 @@
             "link": "https://www.youtube.com/watch?v=MaGB20R6rR0",
             "hz": 1000,
             "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "masterramulan",
+            "link": "https://youtu.be/szLxRSB-3p8",
+            "hz": 240,
+            "mobile": false
         }
     ]
 }
