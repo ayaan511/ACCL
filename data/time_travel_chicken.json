@@ -9,5 +9,13 @@
     "verification": "no",
     "percentToQualify": 56,
     "password": "Free to Copy",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "masterramulan",
+            "link": "https://youtu.be/4gKzShfVYtY?si=1hJvqipV1e1a-zar",
+            "hz": 240,
+            "mobile": false
+        }
+    ]
 }
