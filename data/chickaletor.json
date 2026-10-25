@@ -9,5 +9,13 @@
     "verification": "https://youtu.be/_5FvpdQIpjI",
     "percentToQualify": 56,
     "password": "Free to Copy",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "ashen",
+            "link": "ayaan",
+            "hz": 240,
+            "mobile": true
+        }
+    ]
 }
