@@ -1,0 +1,20 @@
+# Force clear browser cache configurations for all main assets
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|html|json)$">
+        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+    </FilesMatch>
+</IfModule>
+
+# Force turn off LiteSpeed server engine memory background layers
+<IfModule LiteSpeed>
+    CacheDisable public /
+    CacheDisable private /
+</IfModule>
+
+# Strip Entity Tags to block browsers from reusing old script frames
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
