@@ -9,5 +9,13 @@
     "verification": "https://medal.tv/games/geometry-dash/clips/nNuhPM7xeK5KTR95Q?invite=cr-MSxnUXosNjYxNjk0MDY1",
     "percentToQualify": 56,
     "password": "Free to Copy",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "masterramulan",
+            "link": "https://youtu.be/8ChQMMPEkLo?si=sfpQm-Uu8wr8zzaS",
+            "hz": 240,
+            "mobile": false
+        }
+    ]
 }
