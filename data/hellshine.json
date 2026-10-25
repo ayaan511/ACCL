@@ -9,5 +9,13 @@
     "verification": "https://youtube.com/watch?v=0UrnaewypXU&si=y3rXf7EIbLAHeCtn",
     "percentToQualify": 56,
     "password": "Free to Copy",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "masterramulan",
+            "link": "https://youtu.be/ACzzn4ssg7k",
+            "hz": 240,
+            "mobile": false
+        }
+    ]
 }
