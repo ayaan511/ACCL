@@ -23,6 +23,13 @@
             "link": "I don’t get it",
             "hz": 60,
             "mobile": true
+        },
+        {
+            "percent": 100,
+            "user": "Ashen",
+            "link": "ayaan proof",
+            "hz": 240,
+            "mobile": true
         }
     ]
 }
