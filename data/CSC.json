@@ -16,6 +16,13 @@
             "link": "a",
             "hz": 240,
             "mobile": true
+        },
+        {
+            "percent": 100,
+            "user": "masterramulan",
+            "link": "a",
+            "hz": 240,
+            "mobile": false
         }
     ]
 }
