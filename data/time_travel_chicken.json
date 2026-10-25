@@ -44,13 +44,6 @@
             "link": "none",
             "hz": 60,
             "mobile": true
-        },
-        {
-            "percent": 100,
-            "user": "testuser",
-            "link": "a",
-            "hz": 6777,
-            "mobile": false
         }
     ]
 }
