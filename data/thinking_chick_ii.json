@@ -16,6 +16,13 @@
             "link": "none",
             "hz": 60,
             "mobile": true
+        },
+        {
+            "percent": 100,
+            "user": "ashen",
+            "link": "ayaan",
+            "hz": 240,
+            "mobile": true
         }
     ]
 }
