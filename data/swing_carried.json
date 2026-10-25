@@ -16,6 +16,13 @@
             "link": "uhhh i was streaming",
             "hz": 60,
             "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "Masterramulan",
+            "link": "I don’t get it",
+            "hz": 60,
+            "mobile": true
         }
     ]
 }
