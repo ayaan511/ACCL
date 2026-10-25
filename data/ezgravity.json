@@ -37,6 +37,13 @@
             "link": "https://youtu.be/EG8xYVGUlrE?si=tmBM2lSiHz_30Uun",
             "hz": 60,
             "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "Ashen",
+            "link": "ayaan",
+            "hz": 240,
+            "mobile": true
         }
     ]
 }
