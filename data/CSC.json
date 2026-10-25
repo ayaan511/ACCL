@@ -2,10 +2,20 @@
     "id": 151184912,
     "name": "CSC",
     "author": "Ayaan",
-    "creators": ["Ayaan"],
+    "creators": [
+        "Ayaan"
+    ],
     "verifier": "Ayaan",
     "verification": "https://www.youtube.com/watch?v=idkmuchsinceididnotrecord",
     "percentToQualify": 56,
     "password": "No Password",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "Ashen",
+            "link": "a",
+            "hz": 240,
+            "mobile": true
+        }
+    ]
 }
