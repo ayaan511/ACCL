@@ -9,5 +9,13 @@
     "verification": "151252104",
     "percentToQualify": 56,
     "password": "Free to Copy",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "qx3",
+            "link": "none",
+            "hz": 60,
+            "mobile": true
+        }
+    ]
 }
