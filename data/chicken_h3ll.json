@@ -37,6 +37,13 @@
             "link": "photo",
             "hz": 240,
             "mobile": true
+        },
+        {
+            "percent": 100,
+            "user": "ClifreYt",
+            "link": "https://medal.tv/games/geometry-dash/clips/nO21U1yGXHrnOBWQd?invite=cr-MSxPNngsNTY2OTA0NTA0",
+            "hz": 360,
+            "mobile": false
         }
     ]
 }
