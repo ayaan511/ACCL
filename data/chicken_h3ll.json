@@ -30,6 +30,13 @@
             "link": "https://youtu.be/J29t-VPmD5o",
             "hz": 240,
             "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "ashen",
+            "link": "photo",
+            "hz": 240,
+            "mobile": true
         }
     ]
 }
