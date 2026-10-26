@@ -16,6 +16,13 @@
             "link": "ayaan",
             "hz": 240,
             "mobile": true
+        },
+        {
+            "percent": 100,
+            "user": "ClifreYt",
+            "link": "https://medal.tv/games/geometry-dash/clips/nNIoOBo2aO5ThDPE8?invite=cr-MSxsVWgsNTY2OTA0NTA0",
+            "hz": 360,
+            "mobile": false
         }
     ]
 }
