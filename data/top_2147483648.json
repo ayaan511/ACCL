@@ -37,6 +37,13 @@
             "link": "ayaan proof",
             "hz": 240,
             "mobile": true
+        },
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/VGFx9zBbffY",
+            "hz": 320,
+            "mobile": false
         }
     ]
 }
