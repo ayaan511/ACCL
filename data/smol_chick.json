@@ -9,5 +9,13 @@
     "verification": "https://youtu.be/zAEJgZm9iJw",
     "percentToQualify": 100,
     "password": "free to copy",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/YNA3lo4zrUo",
+            "hz": 320,
+            "mobile": false
+        }
+    ]
 }
