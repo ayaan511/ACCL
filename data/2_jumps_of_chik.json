@@ -23,6 +23,13 @@
             "link": "none",
             "hz": 60,
             "mobile": true
+        },
+        {
+            "percent": 100,
+            "user": "FaxaThe3",
+            "link": "https://medal.tv/games/geometry-dash/clips/nPDQmWd4Vi-nW0-9W?invite=cr-MSxTdnAsNjYxNjk0MDY1",
+            "hz": 360,
+            "mobile": false
         }
     ]
 }
