@@ -57,6 +57,13 @@
             "link": "https://youtu.be/XyDiTfRxur8",
             "hz": 240,
             "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "qx3",
+            "link": "none",
+            "hz": 60,
+            "mobile": true
         }
     ]
 }
