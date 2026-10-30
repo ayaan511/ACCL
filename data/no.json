@@ -16,6 +16,13 @@
             "link": "no",
             "hz": 360,
             "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/7lsGXgQYTCc",
+            "hz": 320,
+            "mobile": false
         }
     ]
 }
