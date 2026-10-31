@@ -58,6 +58,13 @@
             "link": "https://www.youtube.com/watch?v=eAUsxFbOivg",
             "hz": 240,
             "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "Ayaan",
+            "link": "https://youtu.be/UFUIrkDFZqU",
+            "hz": 144,
+            "mobile": false
         }
     ]
 }
