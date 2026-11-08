@@ -1,0 +1,18 @@
+{
+    "user": "TestPurgeUser",
+    "timestamp": "2026-11-08T01:37:27.088Z",
+    "deletedLevels": [],
+    "strippedRecords": [
+        {
+            "filename": "Top 1 ACCL",
+            "recordIndex": 9,
+            "record": {
+                "percent": 100,
+                "user": "TestPurgeUser",
+                "link": "test",
+                "hz": 144,
+                "mobile": false
+            }
+        }
+    ]
+}
