@@ -9,5 +9,13 @@
     "verification": "heart and soul",
     "percentToQualify": 99,
     "password": "free to copy",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/NH86V5Gy950",
+            "hz": 320,
+            "mobile": false
+        }
+    ]
 }
