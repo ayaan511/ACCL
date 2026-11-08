@@ -1,0 +1,28 @@
+{
+    "id": 151348635,
+    "name": "CHICKENHOUSE",
+    "author": "Jezikk12",
+    "creators": [
+        "Jezikk12"
+    ],
+    "verifier": "Jezikk12",
+    "verification": "https://youtu.be/B_54jCyZ0Ss",
+    "percentToQualify": 100,
+    "password": "free to copy",
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/WXmDxWIQtso",
+            "hz": 240,
+            "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "MOBA",
+            "link": "https://youtu.be/P2VNAZCQ2TQ",
+            "hz": 60,
+            "mobile": false
+        }
+    ]
+}
