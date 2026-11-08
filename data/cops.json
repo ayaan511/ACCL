@@ -12,6 +12,13 @@
     "records": [
         {
             "percent": 100,
+            "user": "masterramulan",
+            "link": "https://youtu.be/EGAK1cKxg_M",
+            "hz": 240,
+            "mobile": false
+        },
+        {
+            "percent": 100,
             "user": "T00b1a5",
             "link": "https://youtu.be/tmNqn6X0stc",
             "hz": 320,
