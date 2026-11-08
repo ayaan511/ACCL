@@ -1,0 +1,70 @@
+{
+    "id": 151235591,
+    "name": "top 2147483648",
+    "author": "MOBA",
+    "creators": [
+        "MOBA"
+    ],
+    "verifier": "MOBA",
+    "verification": "not exsit",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "percent": 100,
+            "user": "masterramulan",
+            "link": "https://youtu.be/VrGQTv7BrJI",
+            "hz": 240,
+            "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "Faxathe3",
+            "link": "https://medal.tv/games/geometry-dash/clips/nNxDQUtunyHuON-5k?invite=cr-MSwxODUsNjYxNjk0MDY1",
+            "hz": 480,
+            "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "ClifreYt",
+            "link": "https://medal.tv/games/geometry-dash/clips/nNClulQVetD802Wh5?invite=cr-MSxUczUsNTY2OTA0NTA0",
+            "hz": 360,
+            "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "Ashen",
+            "link": "ayaan proof",
+            "hz": 240,
+            "mobile": true
+        },
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/VGFx9zBbffY",
+            "hz": 320,
+            "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "Jezikk12",
+            "link": "https://youtu.be/b8szHX-rUeA",
+            "hz": 240,
+            "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "Yaku520",
+            "link": "https://www.youtube.com/watch?v=eAUsxFbOivg",
+            "hz": 240,
+            "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "Ayaan",
+            "link": "https://youtu.be/UFUIrkDFZqU",
+            "hz": 144,
+            "mobile": false
+        }
+    ]
+}
