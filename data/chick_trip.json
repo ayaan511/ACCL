@@ -1,0 +1,28 @@
+{
+    "id": 151373676,
+    "name": "Chick Trip",
+    "author": "masterramulan",
+    "creators": [
+        "masterramulan"
+    ],
+    "verifier": "masterramulan",
+    "verification": "https://www.youtube.com/watch?v=iwuW-QDT3mw",
+    "percentToQualify": 56,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/Ci1uQm0i0s0",
+            "hz": 320,
+            "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "Jezikk12",
+            "link": "https://youtu.be/NOmZvJ9deNU",
+            "hz": 240,
+            "mobile": false
+        }
+    ]
+}
