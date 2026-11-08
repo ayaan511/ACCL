@@ -96,8 +96,7 @@
     <div class="container">
         <div class="badge">Status Update</div>
         <h1>Challenge List is Down</h1>
-        <p>The Ayaan Chicken Challenge List is currently down for maintenance. Updates are being applied to the data layout, configuration files, and framework settings. The interface will be back online shortly with all leaderboards and records intact.</p>
-        
+        <p>the accl is getting a update, Please wait.</p>
         <!-- Replace the '#' with your permanent Discord invite link -->
         <a href="#" class="btn-discord" target="_blank">
             <img src="/assets/discord.svg" onerror="this.style.display='none'" alt="">

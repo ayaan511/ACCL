@@ -2,57 +2,577 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <!-- The TSL layout is built for desktop width, so this stays fixed at 1024 -->
         <meta name="viewport" content="width=1024" />
         <title>Ayaan Chicken Challenge List (ACCL)</title>
+        <meta name="description" content="The Ayaan Chicken Challenge List: ranked Geometry Dash challenges, records and leaderboard." />
 
-        <!-- Replace your server icon by uploading an image file named "list_icon.png"-->
+        <!-- How the link looks when shared on Discord (theme-color = the embed's side stripe) -->
+        <meta name="theme-color" content="#ffc93c" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="ACCL" />
+        <meta property="og:title" content="Ayaan Chicken Challenge List" />
+        <meta property="og:description" content="Ranked Geometry Dash challenges, records and leaderboard." />
+        <meta name="twitter:card" content="summary" />
+        <!-- For a picture in the Discord embed, add your FULL site URL here, e.g.
+             <meta property="og:image" content="https://yoursite.com/list_icon.png" /> -->
+
+        <!-- Replace your server icon by uploading an image file named "list_icon.png" -->
         <link rel="icon" href="/list_icon.png" />
+        <link rel="apple-touch-icon" href="/list_icon.png" />
+
+        <!-- Pick the theme before anything paints: saved choice first, then the system setting -->
+        <script>
+            (function () {
+                let startDark = false;
+                try {
+                    const savedDark = localStorage.getItem("dark");
+                    if (savedDark !== null) {
+                        startDark = JSON.parse(savedDark) === true;
+                    } else {
+                        startDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                    }
+                } catch (storageError) {
+                    // localStorage blocked; the page just starts in light mode
+                }
+                if (startDark) document.documentElement.classList.add("theme-dark");
+            })();
+        </script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://unpkg.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" type="text/css" href="/css/reset.css" />
-        <link rel="stylesheet" type="text/css" href="/css/typography.css" />
-        <link rel="stylesheet" type="text/css" href="/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="/css/pages/leaderboard.css"
-        />
-        <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" />
-        <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
-        <link rel="stylesheet" type="text/css" href="/css/components/btn.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="/css/components/tabs.css"
-        />
-        <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
-        <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
+        <link rel="stylesheet" href="/css/reset.css" />
+        <link rel="stylesheet" href="/css/typography.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/pages/list.css" />
+        <link rel="stylesheet" href="/css/pages/leaderboard.css" />
+        <link rel="stylesheet" href="/css/pages/roulette.css" />
+        <link rel="stylesheet" href="/css/components/nav.css" />
+        <link rel="stylesheet" href="/css/components/btn.css" />
+        <link rel="stylesheet" href="/css/components/tabs.css" />
+
+        <style>
+            :root {
+                --accentYellow: #ffc93c;
+                --accentOrange: #ff8a00;
+                --combRed: #e5383b;
+                --inkDark: #1d1d1d;
+                --nightBg: #161616;
+                --chickenCube: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M11 7 Q12 2 15 5 Q17 1 19 5 Q22 3 21 8 Z' fill='%23e5383b'/%3E%3Crect x='4' y='7' width='24' height='22' rx='4' fill='%23ffc93c' stroke='%231d1d1d' stroke-width='2'/%3E%3Crect x='17' y='12' width='5' height='5' rx='1' fill='%231d1d1d'/%3E%3Cpath d='M28 18 L31 20.5 L28 23 Z' fill='%23ff8a00' stroke='%231d1d1d' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+
+            html {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            /* Kept in sync with the dark toggle, so overscroll + scrollbars match the theme */
+            html.theme-dark {
+                background: var(--nightBg);
+                color-scheme: dark;
+            }
+
+            /* Hide the raw {{ template }} until Vue has rendered it */
+            [v-cloak] {
+                display: none;
+            }
+
+            ::selection {
+                background: var(--accentYellow);
+                color: var(--inkDark);
+            }
+
+            /* Thin scrollbars so the list panels don't look clunky */
+            * {
+                scrollbar-width: thin;
+                scrollbar-color: rgba(128, 128, 128, 0.45) transparent;
+            }
+            ::-webkit-scrollbar {
+                width: 8px;
+                height: 8px;
+            }
+            ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgba(128, 128, 128, 0.45);
+                border-radius: 8px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgba(128, 128, 128, 0.7);
+            }
+
+            /* ---------- Skip link (only shows up when you Tab into the page) ---------- */
+            .skip-link {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                z-index: 1000;
+                padding: 8px 14px;
+                border-radius: 999px;
+                background: var(--accentYellow);
+                color: var(--inkDark);
+                font-size: 0.85rem;
+                text-decoration: none;
+                transform: translateY(-160%);
+                transition: transform 0.15s;
+            }
+            .skip-link:focus {
+                transform: translateY(0);
+            }
+            #main:focus {
+                outline: none;
+            }
+
+            /* ---------- Header ---------- */
+            /* Comb red / body yellow / beak orange stripe across the top */
+            header {
+                border-top: 4px solid;
+                border-image: linear-gradient(
+                        90deg,
+                        var(--combRed) 0 33.3%,
+                        var(--accentYellow) 33.3% 66.6%,
+                        var(--accentOrange) 66.6% 100%
+                    )
+                    1;
+                box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+            }
+            header.dark {
+                box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                color: inherit;
+                text-decoration: none;
+            }
+            .logo__mark {
+                width: 30px;
+                height: 30px;
+                flex-shrink: 0;
+            }
+            /* A real GD jump: hop up, spin a full turn, land clean */
+            .logo:hover .logo__mark,
+            .logo:focus-visible .logo__mark {
+                animation: cubeJump 0.5s cubic-bezier(0.3, 0, 0.4, 1);
+            }
+            @keyframes cubeJump {
+                0% { transform: translateY(0) rotate(0deg); }
+                50% { transform: translateY(-7px) rotate(-180deg); }
+                100% { transform: translateY(0) rotate(-360deg); }
+            }
+            .logo__text {
+                display: flex;
+                align-items: baseline;
+                gap: 0.45rem;
+            }
+            /* Chunky offset shadow, like GD's title text */
+            .logo h2 {
+                letter-spacing: 0.01em;
+                text-shadow: 2px 2px 0 var(--accentYellow);
+            }
+            .logo p {
+                font-size: 0.72rem;
+                opacity: 0.5;
+            }
+
+            .nav__tab {
+                position: relative;
+            }
+            .nav__tab .type-label-lg {
+                opacity: 0.7;
+                transition: opacity 0.15s;
+            }
+            .nav__tab:hover .type-label-lg,
+            .nav__tab.router-link-exact-active .type-label-lg {
+                opacity: 1;
+            }
+            .nav__tab::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                right: 50%;
+                bottom: 0;
+                height: 3px;
+                border-radius: 3px 3px 0 0;
+                background: var(--accentYellow);
+                transition: left 0.2s ease, right 0.2s ease;
+            }
+            .nav__tab:hover::after {
+                left: 40%;
+                right: 40%;
+            }
+            .nav__tab.router-link-exact-active::after {
+                left: 25%;
+                right: 25%;
+            }
+
+            .nav__icon {
+                cursor: pointer;
+                transition: opacity 0.15s, transform 0.15s;
+            }
+            .nav__icon:hover {
+                opacity: 0.7;
+            }
+            .nav__icon:active {
+                transform: scale(0.9);
+            }
+
+            .nav__help {
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                border: 1.5px solid currentColor;
+                background: none;
+                color: inherit;
+                font: inherit;
+                font-size: 0.8rem;
+                line-height: 1;
+                cursor: pointer;
+                opacity: 0.6;
+                transition: opacity 0.15s;
+            }
+            .nav__help:hover {
+                opacity: 1;
+            }
+
+            /* Plain text hint that points left at the Discord icon */
+            .nav__hint {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.4rem;
+                white-space: nowrap;
+                opacity: 0.85;
+            }
+            .nav__hint-arrow {
+                display: inline-block;
+                color: var(--accentOrange);
+                font-size: 1.1em;
+                line-height: 1;
+                animation: nudgeLeft 1.2s ease-in-out infinite;
+            }
+            @keyframes nudgeLeft {
+                0%, 100% { transform: translateX(0); }
+                50% { transform: translateX(-4px); }
+            }
+
+            a:focus-visible,
+            button:focus-visible {
+                outline: 2px solid var(--accentYellow);
+                outline-offset: 3px;
+                border-radius: 4px;
+            }
+
+            /* ---------- Keyboard shortcuts popup (press ?) ---------- */
+            .shortcuts {
+                margin: auto;
+                width: 320px;
+                padding: 20px 24px;
+                border: 1px solid rgba(128, 128, 128, 0.3);
+                border-radius: 12px;
+                background: #ffffff;
+                color: var(--inkDark);
+                font-family: "Lexend Deca", system-ui, sans-serif;
+                box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+                background-image: linear-gradient(
+                    90deg,
+                    var(--combRed) 0 33.3%,
+                    var(--accentYellow) 33.3% 66.6%,
+                    var(--accentOrange) 66.6% 100%
+                );
+                background-size: 100% 4px;
+                background-repeat: no-repeat;
+            }
+            .shortcuts[open] {
+                animation: popIn 0.16s ease-out;
+            }
+            @keyframes popIn {
+                from { opacity: 0; transform: translateY(8px) scale(0.97); }
+                to { opacity: 1; transform: none; }
+            }
+            .shortcuts.dark {
+                background-color: #1f1f1f;
+                color: #f2f2f2;
+            }
+            .shortcuts::backdrop {
+                background: rgba(0, 0, 0, 0.45);
+            }
+            .shortcuts h3 {
+                margin-bottom: 14px;
+            }
+            .shortcuts table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .shortcuts tbody tr + tr td {
+                border-top: 1px solid rgba(128, 128, 128, 0.15);
+            }
+            .shortcuts td {
+                padding: 6px 0;
+                font-size: 0.9rem;
+            }
+            .shortcuts td:first-child {
+                width: 42%;
+                white-space: nowrap;
+            }
+            .shortcuts kbd {
+                display: inline-block;
+                min-width: 1.7em;
+                padding: 2px 6px;
+                border: 1px solid rgba(128, 128, 128, 0.5);
+                border-bottom-width: 2px;
+                border-radius: 6px;
+                font: inherit;
+                font-size: 0.8rem;
+                text-align: center;
+            }
+            .shortcuts form {
+                margin-top: 16px;
+                text-align: right;
+            }
+            .shortcuts form button {
+                padding: 6px 16px;
+                border: none;
+                border-radius: 999px;
+                background: var(--accentYellow);
+                color: var(--inkDark);
+                font: inherit;
+                font-size: 0.85rem;
+                cursor: pointer;
+            }
+
+            /* ---------- Secret: chicken rain ---------- */
+            .chicken-rain {
+                position: fixed;
+                inset: 0;
+                z-index: 2000;
+                overflow: hidden;
+                pointer-events: none;
+            }
+            .chicken-drop {
+                position: absolute;
+                top: -60px;
+                background: var(--chickenCube) center / contain no-repeat;
+                animation-name: chickenFall;
+                animation-timing-function: cubic-bezier(0.45, 0, 0.8, 1);
+                animation-fill-mode: forwards;
+            }
+            @keyframes chickenFall {
+                to { transform: translateY(calc(100vh + 120px)) rotate(var(--spinAmount)); }
+            }
+
+            /* Quick fade when switching between List / Leaderboard / Roulette */
+            .page-enter-active,
+            .page-leave-active {
+                transition: opacity 0.12s ease;
+            }
+            .page-enter-from,
+            .page-leave-to {
+                opacity: 0;
+            }
+
+            /* Respect the system "reduce motion" setting */
+            @media (prefers-reduced-motion: reduce) {
+                *,
+                *::before,
+                *::after {
+                    transition-duration: 0.01ms !important;
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                }
+            }
+        </style>
+
+        <!-- defer = download in parallel, run in order before main.js, without blocking the page -->
+        <script defer src="https://unpkg.com/vue@3.2.31/dist/vue.global.prod.js"></script>
+        <script defer src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
+        <link rel="modulepreload" href="/js/main.js" />
         <script type="module" src="/js/main.js"></script>
+        <script>
+            const konamiCode = [
+                "arrowup", "arrowup", "arrowdown", "arrowdown",
+                "arrowleft", "arrowright", "arrowleft", "arrowright",
+                "b", "a",
+            ];
+            let konamiProgress = 0;
+
+            function openShortcuts() {
+                const shortcutsDialog = document.getElementById("shortcutsDialog");
+                if (!shortcutsDialog || shortcutsDialog.open) return;
+                if (!shortcutsDialog.dataset.ready) {
+                    // Clicking the dark area outside the popup closes it
+                    shortcutsDialog.addEventListener("click", (clickEvent) => {
+                        if (clickEvent.target === shortcutsDialog) shortcutsDialog.close();
+                    });
+                    shortcutsDialog.dataset.ready = "true";
+                }
+                shortcutsDialog.showModal();
+            }
+
+            function switchTab(tabNumber) {
+                const navTabs = document.querySelectorAll(".nav__tab");
+                const targetTab = navTabs[tabNumber - 1];
+                if (targetTab) targetTab.click();
+            }
+
+            function makeItRainChickens() {
+                if (document.querySelector(".chicken-rain")) return;
+                const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+                const rainLayer = document.createElement("div");
+                rainLayer.className = "chicken-rain";
+                rainLayer.setAttribute("aria-hidden", "true");
+
+                const dropCount = reduceMotion ? 0 : 36;
+                for (let dropIndex = 0; dropIndex < dropCount; dropIndex++) {
+                    const chickenDrop = document.createElement("span");
+                    const dropSize = 22 + Math.random() * 30;
+                    const spinTurns = (Math.random() < 0.5 ? -1 : 1) * (1 + Math.floor(Math.random() * 3));
+                    chickenDrop.className = "chicken-drop";
+                    chickenDrop.style.left = Math.random() * 100 + "vw";
+                    chickenDrop.style.width = dropSize + "px";
+                    chickenDrop.style.height = dropSize + "px";
+                    chickenDrop.style.animationDuration = 1.6 + Math.random() * 1.6 + "s";
+                    chickenDrop.style.animationDelay = Math.random() * 1.2 + "s";
+                    chickenDrop.style.setProperty("--spinAmount", spinTurns * 360 + "deg");
+                    rainLayer.appendChild(chickenDrop);
+                }
+                document.body.appendChild(rainLayer);
+                setTimeout(() => rainLayer.remove(), 4500);
+            }
+
+            // Keeps <html> in step with the dark toggle (overscroll color, native scrollbars)
+            function syncPageTheme() {
+                const siteHeader = document.querySelector("header");
+                if (!siteHeader) return;
+                const isDark = siteHeader.classList.contains("dark");
+                document.documentElement.classList.toggle("theme-dark", isDark);
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                // First visit with no saved choice: follow the system's dark mode
+                try {
+                    const savedDark = localStorage.getItem("dark");
+                    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                    const themeToggle = document.getElementById("themeToggle");
+                    if (savedDark === null && systemDark && themeToggle) themeToggle.click();
+                } catch (storageError) {
+                    // No storage, nothing to follow
+                }
+
+                const siteHeader = document.querySelector("header");
+                if (siteHeader) {
+                    new MutationObserver(syncPageTheme).observe(siteHeader, {
+                        attributes: true,
+                        attributeFilter: ["class"],
+                    });
+                }
+                syncPageTheme();
+            });
+
+            // Nav buttons + skip link (listened for here so Vue re-renders can't drop them)
+            document.addEventListener("click", (event) => {
+                if (!event.target.closest) return;
+
+                if (event.target.closest("#shortcutsButton")) {
+                    openShortcuts();
+                    return;
+                }
+
+                // Hash routing means href="#main" would change the page, so focus it by hand
+                if (event.target.closest("#skipLink")) {
+                    event.preventDefault();
+                    const mainContent = document.getElementById("main");
+                    if (mainContent) mainContent.focus();
+                }
+            });
+
+            document.addEventListener("keydown", (event) => {
+                const typingTarget =
+                    event.target.closest &&
+                    event.target.closest("input, textarea, select, [contenteditable]");
+                if (typingTarget || event.ctrlKey || event.metaKey || event.altKey) return;
+
+                const pressedKey = event.key.toLowerCase();
+
+                // ↑ ↑ ↓ ↓ ← → ← → B A
+                konamiProgress = pressedKey === konamiCode[konamiProgress]
+                    ? konamiProgress + 1
+                    : pressedKey === konamiCode[0] ? 1 : 0;
+                if (konamiProgress === konamiCode.length) {
+                    konamiProgress = 0;
+                    makeItRainChickens();
+                }
+
+                if (event.key === "?") {
+                    event.preventDefault();
+                    openShortcuts();
+                    return;
+                }
+
+                const shortcutsDialog = document.getElementById("shortcutsDialog");
+                if (shortcutsDialog && shortcutsDialog.open) return;
+
+                if (pressedKey === "d") {
+                    const themeToggle = document.getElementById("themeToggle");
+                    if (themeToggle) themeToggle.click();
+                    return;
+                }
+
+                if (pressedKey === "1" || pressedKey === "2" || pressedKey === "3") {
+                    switchTab(Number(pressedKey));
+                }
+            });
+        </script>
     </head>
-    <body id="app">
+    <body id="app" v-cloak>
+        <a id="skipLink" class="skip-link" href="#main">Skip to content</a>
+
         <header :class="{ dark: store.dark }">
-            <div class="logo">
-                <h2>ACCL</h2>
-                <p>v1.0.0</p>
-            </div>
-            <nav class="nav">
-                <router-link class="nav__tab" to="/">
+            <router-link class="logo" to="/" title="Back to the list">
+                <!-- Chicken cube logo mark -->
+                <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M11 7 Q12 2 15 5 Q17 1 19 5 Q22 3 21 8 Z" fill="#e5383b" />
+                    <rect x="4" y="7" width="24" height="22" rx="4" fill="#ffc93c" stroke="#1d1d1d" stroke-width="2" />
+                    <rect x="17" y="12" width="5" height="5" rx="1" fill="#1d1d1d" />
+                    <path d="M28 18 L31 20.5 L28 23 Z" fill="#ff8a00" stroke="#1d1d1d" stroke-width="1.5" stroke-linejoin="round" />
+                    <rect x="8" y="21" width="9" height="3" rx="1.5" fill="#1d1d1d" opacity="0.15" />
+                </svg>
+                <div class="logo__text">
+                    <h2>ACCL</h2>
+                    <p>v1.3.0</p>
+                </div>
+            </router-link>
+            <nav class="nav" aria-label="Main">
+                <router-link class="nav__tab" to="/" title="List (1)">
                     <span class="type-label-lg">List</span>
                 </router-link>
-                <router-link class="nav__tab" to="/leaderboard">
+                <router-link class="nav__tab" to="/leaderboard" title="Leaderboard (2)">
                     <span class="type-label-lg">Leaderboard</span>
                 </router-link>
-                <router-link class="nav__tab" to="/roulette">
+                <router-link class="nav__tab" to="/roulette" title="Roulette (3)">
                     <span class="type-label-lg">Roulette</span>
                 </router-link>
                 <div class="nav__actions">
                     <button
+                        type="button"
+                        id="shortcutsButton"
+                        class="nav__help"
+                        title="Keyboard shortcuts (?)"
+                        aria-label="Show keyboard shortcuts"
+                    >?</button>
+                    <button
+                        type="button"
+                        id="themeToggle"
                         class="nav__icon"
+                        :title="store.dark ? 'Light mode (D)' : 'Dark mode (D)'"
+                        :aria-label="store.dark ? 'Switch to light mode' : 'Switch to dark mode'"
+                        :aria-pressed="store.dark ? 'true' : 'false'"
                         @click.prevent="store.toggleDark()"
                     >
                         <img
@@ -60,20 +580,47 @@
                             alt=""
                         />
                     </button>
-                    <!-- Replace the '#' with your discord server's invite-->
-                    <a class="nav__icon" href="https://discord.gg" target="_blank">
-                        <img src="/assets/discord.svg" alt="Discord Logo" />
-                    </a>
-                    <!-- List record submission form, add a link to replace the '#' when putting a link to your list submission form-->
+                    <!-- Discord server invite -->
                     <a
-                        class="nav__cta type-label-lg"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfHQNOe-uJnOxzPwpzGeWKj8W30JSONom2SW315bbXaEbjhcA/viewform?usp=sharing&ouid=112439457049910535171"
+                        class="nav__icon"
+                        href="https://discord.gg/sdJf82VUe7"
                         target="_blank"
-                        >Submit Record</a
+                        rel="noopener noreferrer"
+                        title="Join the Discord"
                     >
+                        <img src="/assets/discord.svg" alt="Discord" />
+                    </a>
+                    <!-- Plain text hint pointing left at the Discord icon -->
+                    <span class="nav__hint type-label-lg">
+                        <span class="nav__hint-arrow" aria-hidden="true">←</span>
+                        Submit Records on the Discord!
+                    </span>
                 </div>
             </nav>
         </header>
-        <router-view :class="{ dark: store.dark }"></router-view>
+
+        <router-view v-slot="{ Component }">
+            <transition name="page" mode="out-in">
+                <component :is="Component" id="main" tabindex="-1" :class="{ dark: store.dark }"></component>
+            </transition>
+        </router-view>
+
+        <dialog id="shortcutsDialog" class="shortcuts" :class="{ dark: store.dark }" aria-labelledby="shortcutsTitle">
+            <h3 id="shortcutsTitle">Keyboard shortcuts</h3>
+            <table>
+                <tbody>
+                    <tr><td><kbd>/</kbd></td><td>Search levels</td></tr>
+                    <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Browse levels</td></tr>
+                    <tr><td><kbd>J</kbd> <kbd>K</kbd></td><td>Browse levels</td></tr>
+                    <tr><td><kbd>Esc</kbd></td><td>Clear search</td></tr>
+                    <tr><td><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd></td><td>List, Leaderboard, Roulette</td></tr>
+                    <tr><td><kbd>D</kbd></td><td>Dark mode</td></tr>
+                    <tr><td><kbd>?</kbd></td><td>This list</td></tr>
+                </tbody>
+            </table>
+            <form method="dialog">
+                <button type="submit">Got it</button>
+            </form>
+        </dialog>
     </body>
 </html>
