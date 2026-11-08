@@ -64,6 +64,13 @@
             "link": "none",
             "hz": 60,
             "mobile": true
+        },
+        {
+            "percent": 100,
+            "user": "MOBA",
+            "link": "really??",
+            "hz": 999999999,
+            "mobile": false
         }
     ]
 }
