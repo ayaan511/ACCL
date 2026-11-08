@@ -9,5 +9,13 @@
     "verification": "Novideo,no recording. Was proven to be real using a screenshare, dont say im cheating please",
     "percentToQualify": 100,
     "password": "Free to Copy",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "Jezikk12",
+            "link": "https://medal.tv/games/geometry-dash/clips/nTitcWhvh-7VRpBqc?invite=cr-MSxMdkYsNTM5NzMxMTQ0",
+            "hz": 240,
+            "mobile": false
+        }
+    ]
 }
