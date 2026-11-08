@@ -71,6 +71,13 @@
             "link": "really??",
             "hz": 999999999,
             "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "TestPurgeUser",
+            "link": "test",
+            "hz": 144,
+            "mobile": false
         }
     ]
 }
