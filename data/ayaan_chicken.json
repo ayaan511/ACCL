@@ -9,5 +9,13 @@
     "verification": "https://medal.tv/games/geometry-dash/clips/nTjtQ2RhO_NzbR76r?invite=cr-MSxWSGEsNTM5NzMxMTQ0",
     "percentToQualify": 100,
     "password": "free to copy",
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/F6d2rsdMREs",
+            "hz": 320,
+            "mobile": false
+        }
+    ]
 }
