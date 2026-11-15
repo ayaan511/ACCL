@@ -9,5 +9,12 @@
     "verification": "https://youtu.be/wurlumGPFyE",
     "percentToQualify": 100,
     "password": "Free to Copy",
-    "records": []
+    "records": [],
+    "types": [
+        "Mini",
+        "Cube Based",
+        "Consistency Based",
+        "Memory Based",
+        "Fake Path"
+    ]
 }
