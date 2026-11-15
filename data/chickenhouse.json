@@ -24,5 +24,13 @@
             "hz": 60,
             "mobile": false
         }
+    ],
+    "types": [
+        "Short",
+        "Layout",
+        "Wave Based",
+        "Nerve Control",
+        "Gravity Based",
+        "Fast Speed"
     ]
 }
