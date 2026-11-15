@@ -9,5 +9,13 @@
     "verification": "https://youtu.be/wnAlEBgjizM",
     "percentToQualify": 100,
     "password": "free to copy",
-    "records": []
+    "records": [],
+    "types": [
+        "Mini",
+        "Layout",
+        "Wave Based",
+        "Timing Based",
+        "Mini Based",
+        "Fast Speed"
+    ]
 }
