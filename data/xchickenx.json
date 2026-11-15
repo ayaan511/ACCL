@@ -17,5 +17,12 @@
             "hz": 320,
             "mobile": false
         }
+    ],
+    "types": [
+        "Mini",
+        "Layout",
+        "Wave Based",
+        "Timing Based",
+        "Fast Speed"
     ]
 }
