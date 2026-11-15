@@ -17,5 +17,11 @@
             "hz": 320,
             "mobile": false
         }
+    ],
+    "types": [
+        "Layout",
+        "Wave Based",
+        "Consistency Based",
+        "Mini Based"
     ]
 }
