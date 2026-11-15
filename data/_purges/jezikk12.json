@@ -1,10 +1,67 @@
 {
     "user": "Jezikk12",
-    "timestamp": "2026-11-08T14:06:54.294Z",
+    "timestamp": "2026-11-15T15:25:45.455Z",
     "deletedLevels": [
         {
+            "filename": "ayaan_chicken",
+            "position": 31,
+            "data": {
+                "id": 152075902,
+                "name": "ayaan chicken",
+                "author": "Jezikk12",
+                "creators": [
+                    "Jezikk12"
+                ],
+                "verifier": "Jezikk12",
+                "verification": "https://medal.tv/games/geometry-dash/clips/nTjtQ2RhO_NzbR76r?invite=cr-MSxWSGEsNTM5NzMxMTQ0",
+                "percentToQualify": 100,
+                "password": "free to copy",
+                "records": [
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/F6d2rsdMREs",
+                        "hz": 320,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/F6d2rsdMREs",
+                        "hz": 320,
+                        "mobile": false
+                    }
+                ]
+            }
+        },
+        {
+            "filename": "chick_ship",
+            "position": 13,
+            "data": {
+                "id": 152042803,
+                "name": "chick ship",
+                "author": "Jezikk12",
+                "creators": [
+                    "Jezikk12"
+                ],
+                "verifier": "Jezikk12",
+                "verification": "https://medal.tv/games/geometry-dash/clips/nT9Muyc3Guz1U3A9t?invite=cr-MSx4UVYsNTM5NzMxMTQ0",
+                "percentToQualify": 100,
+                "password": "free to copy",
+                "records": [
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/fH3lot-IK8s",
+                        "hz": 320,
+                        "mobile": false
+                    }
+                ]
+            }
+        },
+        {
             "filename": "chick_trials",
-            "position": 11,
+            "position": 16,
             "data": {
                 "id": 151554958,
                 "name": "chick trials",
@@ -28,8 +85,33 @@
             }
         },
         {
+            "filename": "chicken_blade",
+            "position": 1,
+            "data": {
+                "id": 152430573,
+                "name": "chicken blade",
+                "author": "Jezikk12",
+                "creators": [
+                    "Jezikk12"
+                ],
+                "verifier": "Jezikk12",
+                "verification": "https://medal.tv/games/geometry-dash/clips/nVqYNVXV85uYwx-0u/spok?invite=cr-MSxuTDAsNTM5NzMxMTQ0LA",
+                "percentToQualify": 100,
+                "password": "free to copy",
+                "records": [
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/kKJAMSCy6WM",
+                        "hz": 320,
+                        "mobile": false
+                    }
+                ]
+            }
+        },
+        {
             "filename": "chicken_vivi",
-            "position": 22,
+            "position": 27,
             "data": {
                 "id": 151404739,
                 "name": "chicken vivi",
@@ -86,7 +168,7 @@
         },
         {
             "filename": "null_chicken",
-            "position": 12,
+            "position": 17,
             "data": {
                 "id": 151665739,
                 "name": "null chicken",
@@ -98,12 +180,20 @@
                 "verification": "https://medal.tv/games/geometry-dash/clips/nQqW1hv8js0fBwL8k?invite=cr-MSxuT1gsNTM5NzMxMTQ0",
                 "percentToQualify": 100,
                 "password": "free to copy",
-                "records": []
+                "records": [
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/OZ_VJqZcOAs",
+                        "hz": 320,
+                        "mobile": false
+                    }
+                ]
             }
         },
         {
             "filename": "sakupen_chick",
-            "position": 14,
+            "position": 19,
             "data": {
                 "id": 151522965,
                 "name": "sakupen chick",
@@ -128,7 +218,7 @@
         },
         {
             "filename": "smol_chick",
-            "position": 20,
+            "position": 24,
             "data": {
                 "id": 151406588,
                 "name": "smol chick",
@@ -150,16 +240,41 @@
                     }
                 ]
             }
+        },
+        {
+            "filename": "xchickenx",
+            "position": 8,
+            "data": {
+                "id": 152078680,
+                "name": "xchickenx",
+                "author": "Jezikk12",
+                "creators": [
+                    "Jezikk12"
+                ],
+                "verifier": "Jezikk12",
+                "verification": "https://medal.tv/games/geometry-dash/clips/nTkerFngRGAg7ikaJ?invite=cr-MSxLaDUsNTM5NzMxMTQ0",
+                "percentToQualify": 100,
+                "password": "free to copy",
+                "records": [
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/Ik20SQqwnxs",
+                        "hz": 320,
+                        "mobile": false
+                    }
+                ]
+            }
         }
     ],
     "strippedRecords": [
         {
-            "filename": "2_jumps_of_chik",
-            "recordIndex": 0,
+            "filename": "8x3",
+            "recordIndex": 1,
             "record": {
                 "percent": 100,
                 "user": "Jezikk12",
-                "link": "https://medal.tv/games/geometry-dash/clips/nPwuNckYMAFL6Ldqx?invite=cr-MSxpY3gsNTM5NzMxMTQ0",
+                "link": "https://medal.tv/games/geometry-dash/clips/nSLfPq0wQIb5vaVmQ?invite=cr-MSxsb0gsNTM5NzMxMTQ0",
                 "hz": 240,
                 "mobile": false
             }
@@ -170,7 +285,7 @@
             "record": {
                 "percent": 100,
                 "user": "Jezikk12",
-                "link": "https://medal.tv/games/geometry-dash/clips/nSLfPq0wQIb5vaVmQ?invite=cr-MSwyazUsNTM5NzMxMTQ0",
+                "link": "https://medal.tv/games/geometry-dash/clips/nTjcqgKvkV0OVRm9g?invite=cr-MSw5c1EsNTM5NzMxMTQ0",
                 "hz": 240,
                 "mobile": false
             }
@@ -182,28 +297,6 @@
                 "percent": 100,
                 "user": "Jezikk12",
                 "link": "https://youtu.be/Bh4igKyMjeY",
-                "hz": 240,
-                "mobile": false
-            }
-        },
-        {
-            "filename": "Top 1 ACCL",
-            "recordIndex": 5,
-            "record": {
-                "percent": 100,
-                "user": "Jezikk12",
-                "link": "https://youtu.be/yuQRAQFFlpo",
-                "hz": 240,
-                "mobile": false
-            }
-        },
-        {
-            "filename": "chick_f_you",
-            "recordIndex": 0,
-            "record": {
-                "percent": 100,
-                "user": "Jezikk12",
-                "link": "https://medal.tv/games/geometry-dash/clips/nPxnHa0RrBNo2g3oM?invite=cr-MSxPYkcsNTM5NzMxMTQ0",
                 "hz": 240,
                 "mobile": false
             }
@@ -253,23 +346,23 @@
             }
         },
         {
+            "filename": "chiuber_is_dead",
+            "recordIndex": 0,
+            "record": {
+                "percent": 100,
+                "user": "Jezikk12",
+                "link": "https://medal.tv/games/geometry-dash/clips/nTitcWhvh-7VRpBqc?invite=cr-MSxMdkYsNTM5NzMxMTQ0",
+                "hz": 240,
+                "mobile": false
+            }
+        },
+        {
             "filename": "cops",
             "recordIndex": 2,
             "record": {
                 "percent": 100,
                 "user": "Jezikk12",
                 "link": "https://youtu.be/anAR6mw3km0",
-                "hz": 240,
-                "mobile": false
-            }
-        },
-        {
-            "filename": "ezgravity",
-            "recordIndex": 6,
-            "record": {
-                "percent": 100,
-                "user": "Jezikk12",
-                "link": "https://youtu.be/zUNIphShzRw",
                 "hz": 240,
                 "mobile": false
             }
@@ -292,6 +385,17 @@
                 "percent": 100,
                 "user": "Jezikk12",
                 "link": "https://medal.tv/games/geometry-dash/clips/nQfh6VAJjACiv8NcP?invite=cr-MSxFYWksNTM5NzMxMTQ0",
+                "hz": 240,
+                "mobile": false
+            }
+        },
+        {
+            "filename": "pure_slop",
+            "recordIndex": 0,
+            "record": {
+                "percent": 100,
+                "user": "Jezikk12",
+                "link": "https://medal.tv/games/geometry-dash/clips/nTiMOXRdJWMN4j4A5?invite=cr-MSxJbDksNTM5NzMxMTQ0",
                 "hz": 240,
                 "mobile": false
             }
@@ -358,6 +462,17 @@
                 "percent": 100,
                 "user": "Jezikk12",
                 "link": "https://youtu.be/b8szHX-rUeA",
+                "hz": 240,
+                "mobile": false
+            }
+        },
+        {
+            "filename": "total_dot",
+            "recordIndex": 0,
+            "record": {
+                "percent": 100,
+                "user": "Jezikk12",
+                "link": "https://medal.tv/games/geometry-dash/clips/nTl2mNtIdrdUpsA1H?invite=cr-MSw0UzEsNTM5NzMxMTQ0",
                 "hz": 240,
                 "mobile": false
             }
