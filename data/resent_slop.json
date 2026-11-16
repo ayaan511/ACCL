@@ -9,7 +9,15 @@
     "verification": "https://youtu.be/wurlumGPFyE",
     "percentToQualify": 100,
     "password": "Free to Copy",
-    "records": [],
+    "records": [
+        {
+            "percent": 100,
+            "user": "Jezikk12",
+            "link": "https://youtu.be/q165BdIjkmI?is=eFmXV7eHexThwoL7",
+            "hz": 60,
+            "mobile": true
+        }
+    ],
     "types": [
         "Mini",
         "Cube Based",
