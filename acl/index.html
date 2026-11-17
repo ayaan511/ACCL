@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ayaan Chicken List (ACL)</title>
+        <!-- Backup redirect in case JavaScript is off -->
+        <meta http-equiv="refresh" content="0; url=/#/acl" />
+        <script>
+            // The site uses hash routing, so /acl → /#/acl (keeps ?level=5 if it's there)
+            const levelQuery = window.location.search;
+            window.location.replace("/#/acl" + levelQuery);
+        </script>
+    </head>
+    <body>
+        <p><a href="/#/acl">Go to the Ayaan Chicken List</a></p>
+    </body>
+</html>
