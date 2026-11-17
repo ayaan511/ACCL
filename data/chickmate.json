@@ -9,7 +9,15 @@
     "verification": "https://youtu.be/wnAlEBgjizM",
     "percentToQualify": 100,
     "password": "free to copy",
-    "records": [],
+    "records": [
+        {
+            "percent": 100,
+            "user": "MOBA",
+            "link": "https://youtu.be/5f1nKF1vmUc",
+            "hz": 60,
+            "mobile": false
+        }
+    ],
     "types": [
         "Mini",
         "Layout",
