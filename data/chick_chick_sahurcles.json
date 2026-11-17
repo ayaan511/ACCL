@@ -14,5 +14,13 @@
         "Click Sync",
         "Nerve Control"
     ],
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/VBAXbeJIz4Y",
+            "hz": 320,
+            "mobile": false
+        }
+    ]
 }
