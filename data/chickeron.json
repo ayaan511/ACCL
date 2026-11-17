@@ -16,5 +16,13 @@
         "Nerve Control",
         "Fast Speed"
     ],
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/QNbmLCh-9bs",
+            "hz": 320,
+            "mobile": false
+        }
+    ]
 }
