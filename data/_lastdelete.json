@@ -1,35 +1,29 @@
 {
     "type": "level",
-    "filename": "total_dot",
-    "listKey": "accl",
-    "position": 22,
+    "filename": "chickenhouse",
+    "position": 3,
     "data": {
-        "id": 152078680,
-        "name": "total dot",
-        "author": "Gregym",
+        "id": 151348635,
+        "name": "CHICKENHOUSE",
+        "author": "Jezikk12",
         "creators": [
-            "Gregym"
+            "Jezikk12"
         ],
-        "verifier": "Gregym",
-        "verification": "https://medal.tv/games/geometry-dash/clips/nTIrKbyb2XkuAY_FO?invite=cr-MSxzQjcsOTYzNDAzMjU2",
+        "verifier": "Jezikk12",
+        "verification": "https://medal.tv/games/geometry-dash/clips/nOltwxD7vsECwmIy0/spok?invite=cr-MSxPTE8sNTM5NzMxMTQ0LA",
         "percentToQualify": 100,
-        "password": "free to copy",
-        "records": [
-            {
-                "percent": 100,
-                "user": "Jezikk12",
-                "link": "https://medal.tv/games/geometry-dash/clips/nTl2mNtIdrdUpsA1H?invite=cr-MSw0UzEsNTM5NzMxMTQ0",
-                "hz": 240,
-                "mobile": false
-            },
-            {
-                "percent": 100,
-                "user": "T00b1a5",
-                "link": "https://youtu.be/om6ae-K81PE",
-                "hz": 320,
-                "mobile": false
-            }
-        ]
+        "password": "Free to Copy",
+        "types": [
+            "Wave Based",
+            "Gamemode Switching",
+            "Reading Based",
+            "Nerve Control",
+            "Muscle Memory",
+            "Size Change",
+            "Gravity Based",
+            "Fast Speed"
+        ],
+        "records": []
     },
-    "timestamp": "2026-11-17T03:53:26.212Z"
+    "timestamp": "2026-11-19T14:16:07.405Z"
 }
