@@ -6,31 +6,18 @@
         "Jezikk12"
     ],
     "verifier": "Jezikk12",
-    "verification": "https://youtu.be/B_54jCyZ0Ss",
+    "verification": "https://medal.tv/games/geometry-dash/clips/nOltwxD7vsECwmIy0/spok?invite=cr-MSxPTE8sNTM5NzMxMTQ0LA",
     "percentToQualify": 100,
-    "password": "free to copy",
-    "records": [
-        {
-            "percent": 100,
-            "user": "T00b1a5",
-            "link": "https://youtu.be/WXmDxWIQtso",
-            "hz": 240,
-            "mobile": false
-        },
-        {
-            "percent": 100,
-            "user": "MOBA",
-            "link": "https://youtu.be/P2VNAZCQ2TQ",
-            "hz": 60,
-            "mobile": false
-        }
-    ],
+    "password": "Free to Copy",
     "types": [
-        "Short",
-        "Layout",
         "Wave Based",
+        "Gamemode Switching",
+        "Reading Based",
         "Nerve Control",
+        "Muscle Memory",
+        "Size Change",
         "Gravity Based",
         "Fast Speed"
-    ]
+    ],
+    "records": []
 }
