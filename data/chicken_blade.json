@@ -6,22 +6,20 @@
         "Jezikk12"
     ],
     "verifier": "Jezikk12",
-    "verification": "https://medal.tv/games/geometry-dash/clips/nVqYNVXV85uYwx-0u/spok?invite=cr-MSxuTDAsNTM5NzMxMTQ0LA",
+    "verification": "https://medal.tv/games/geometry-dash/clips/nVqYNVXV85uYwx-0u/spok?invite=cr-MSxIVk8sNTM5NzMxMTQ0LA",
     "percentToQualify": 100,
-    "password": "free to copy",
-    "records": [
-        {
-            "percent": 100,
-            "user": "T00b1a5",
-            "link": "https://youtu.be/kKJAMSCy6WM",
-            "hz": 320,
-            "mobile": false
-        }
-    ],
+    "password": "Free to Copy",
     "types": [
-        "Layout",
         "Wave Based",
+        "Mini Wave Based",
         "Consistency Based",
-        "Mini Based"
-    ]
+        "Straight Fly",
+        "Tight Spacing",
+        "Corridor Based",
+        "Nerve Control",
+        "Size Change",
+        "Speed Change Based",
+        "Fast Speed"
+    ],
+    "records": []
 }
