@@ -27,6 +27,13 @@
             "link": ":)",
             "hz": 320,
             "mobile": false
+        },
+        {
+            "percent": 100,
+            "user": "MOBA",
+            "link": "No here",
+            "hz": 60,
+            "mobile": false
         }
     ]
 }
