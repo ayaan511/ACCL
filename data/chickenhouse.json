@@ -20,5 +20,13 @@
         "Gravity Based",
         "Fast Speed"
     ],
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "t00b1a5",
+            "link": ":)",
+            "hz": 320,
+            "mobile": false
+        }
+    ]
 }
