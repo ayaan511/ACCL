@@ -1,28 +1,22 @@
 {
-    "id": 151322559,
+    "id": 15132259,
     "name": "SS3 CHICKEN",
-    "author": "masterramulan",
+    "author": "Masterramulan",
     "creators": [
-        "masterramulan"
+        "Masterramulan"
     ],
-    "verifier": "masterramulan",
-    "verification": "https://youtu.be/y7ToSp69nuM?si=vDjDtYgsJXE3oQT0",
-    "percentToQualify": 56,
+    "verifier": "Masterramulan",
+    "verification": "https://www.youtube.com/watch?v=y7ToSp69nuM",
+    "percentToQualify": 100,
     "password": "Free to Copy",
-    "records": [
-        {
-            "percent": 100,
-            "user": "T00b1a5",
-            "link": "https://youtu.be/63NPygbBpXk",
-            "hz": 320,
-            "mobile": false
-        },
-        {
-            "percent": 100,
-            "user": "Jezikk12",
-            "link": "https://medal.tv/games/geometry-dash/clips/nPQIs2iOE-SD0sebM?invite=cr-MSxzMlMsNTM5NzMxMTQ0",
-            "hz": 240,
-            "mobile": false
-        }
-    ]
+    "types": [
+        "Cube Based",
+        "Ship Based",
+        "Wave Based",
+        "Timing Based",
+        "Memory Based",
+        "Tight Spacing",
+        "Nerve Control"
+    ],
+    "records": []
 }
