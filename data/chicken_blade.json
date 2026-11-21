@@ -21,5 +21,13 @@
         "Speed Change Based",
         "Fast Speed"
     ],
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "WoyePlayer1",
+            "link": "https://youtu.be/V_c8i__a1Rg",
+            "hz": 240,
+            "mobile": false
+        }
+    ]
 }
