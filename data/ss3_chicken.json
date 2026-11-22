@@ -18,5 +18,13 @@
         "Tight Spacing",
         "Nerve Control"
     ],
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://www.youtube.com/watch?v=63NPygbBpXk&list=PLU8j1HE3E1js&index=35",
+            "hz": 320,
+            "mobile": false
+        }
+    ]
 }
