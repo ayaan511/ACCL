@@ -1,27 +1,27 @@
 {
     "user": "MOBA",
-    "timestamp": "2026-11-08T14:27:39.700Z",
+    "timestamp": "2026-11-22T16:59:21.392Z",
     "deletedLevels": [
         {
-            "filename": "accl_top1_nerfed_xe",
-            "position": 1,
+            "filename": "hell_before_buffed_",
+            "position": null,
             "data": {
-                "id": 151727812,
-                "name": "accl top1 nerfed XE",
+                "id": 151296306,
+                "name": "HELL BEFORE(buffed)",
                 "author": "MOBA",
                 "creators": [
                     "MOBA"
                 ],
                 "verifier": "MOBA",
-                "verification": "https://youtu.be/fsWwbyAzKHU?si=pVpVrlOwI2Pc6N3g",
-                "percentToQualify": 97,
-                "password": "free to copy",
+                "verification": "BROKEN VID BUT I CAN PROF IT LOL",
+                "percentToQualify": 100,
+                "password": "Free to Copy",
                 "records": []
             }
         },
         {
             "filename": "mid_wave",
-            "position": 35,
+            "position": 40,
             "data": {
                 "id": 151592552,
                 "name": "mid wave",
@@ -40,13 +40,69 @@
                         "link": "https://medal.tv/games/geometry-dash/clips/nQfh6VAJjACiv8NcP?invite=cr-MSxFYWksNTM5NzMxMTQ0",
                         "hz": 240,
                         "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/5R-_jIiJyGs",
+                        "hz": 320,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "Ayaan",
+                        "link": "https://youtu.be/SlUnQUVULOI",
+                        "hz": 144,
+                        "mobile": false
+                    }
+                ]
+            }
+        },
+        {
+            "filename": "moba",
+            "position": null,
+            "data": {
+                "id": 151727812,
+                "name": "MOBA",
+                "author": "MOBA",
+                "creators": [
+                    "MOBA"
+                ],
+                "verifier": "MOBA",
+                "verification": "https://youtu.be/fsWwbyAzKHU?si=pVpVrlOwI2Pc6N3g",
+                "percentToQualify": 97,
+                "password": "free to copy",
+                "records": []
+            }
+        },
+        {
+            "filename": "moba_trip",
+            "position": 8,
+            "data": {
+                "id": 152120596,
+                "name": "MOBA TRIP",
+                "author": "MOBA",
+                "creators": [
+                    "MOBA"
+                ],
+                "verifier": "MOBA",
+                "verification": "https://youtu.be/1tLwz44wC8Q?is=7sMWpSljfOWb41US",
+                "percentToQualify": 100,
+                "password": "Free to Copy",
+                "records": [
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/4zX76m27WSk",
+                        "hz": 320,
+                        "mobile": false
                     }
                 ]
             }
         },
         {
             "filename": "no_name",
-            "position": 8,
+            "position": 12,
             "data": {
                 "id": 151444042,
                 "name": "no name",
@@ -70,8 +126,47 @@
             }
         },
         {
+            "filename": "resent_slop",
+            "position": 16,
+            "data": {
+                "id": 152446059,
+                "name": "resent slop",
+                "author": "MOBA",
+                "creators": [
+                    "MOBA"
+                ],
+                "verifier": "MOBA",
+                "verification": "https://youtu.be/wurlumGPFyE",
+                "percentToQualify": 100,
+                "password": "Free to Copy",
+                "records": [
+                    {
+                        "percent": 100,
+                        "user": "Jezikk12",
+                        "link": "https://youtu.be/q165BdIjkmI?is=eFmXV7eHexThwoL7",
+                        "hz": 60,
+                        "mobile": true
+                    },
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/jaI-rTVmaLU",
+                        "hz": 320,
+                        "mobile": false
+                    }
+                ],
+                "types": [
+                    "Mini",
+                    "Cube Based",
+                    "Consistency Based",
+                    "Memory Based",
+                    "Fake Path"
+                ]
+            }
+        },
+        {
             "filename": "top_2147483648",
-            "position": 36,
+            "position": 41,
             "data": {
                 "id": 151235591,
                 "name": "top 2147483648",
@@ -146,23 +241,23 @@
     ],
     "strippedRecords": [
         {
-            "filename": "Top 1 ACCL",
-            "recordIndex": 8,
-            "record": {
-                "percent": 100,
-                "user": "MOBA",
-                "link": "really??",
-                "hz": 999999999,
-                "mobile": false
-            }
-        },
-        {
             "filename": "chickenhouse",
             "recordIndex": 1,
             "record": {
                 "percent": 100,
                 "user": "MOBA",
-                "link": "https://youtu.be/P2VNAZCQ2TQ",
+                "link": "No here",
+                "hz": 60,
+                "mobile": false
+            }
+        },
+        {
+            "filename": "chickmate",
+            "recordIndex": 0,
+            "record": {
+                "percent": 100,
+                "user": "MOBA",
+                "link": "https://youtu.be/5f1nKF1vmUc",
                 "hz": 60,
                 "mobile": false
             }
