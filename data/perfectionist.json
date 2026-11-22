@@ -18,5 +18,13 @@
         "Memory Based",
         "Learny"
     ],
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/wuBH0t0JkeY",
+            "hz": 320,
+            "mobile": false
+        }
+    ]
 }
