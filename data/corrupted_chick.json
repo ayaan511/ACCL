@@ -16,5 +16,13 @@
         "Muscle Memory",
         "Very Fast Speed"
     ],
-    "records": []
+    "records": [
+        {
+            "percent": 100,
+            "user": "T00b1a5",
+            "link": "https://youtu.be/E7lDSlo0WGc",
+            "hz": 320,
+            "mobile": false
+        }
+    ]
 }
