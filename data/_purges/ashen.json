@@ -1,0 +1,198 @@
+{
+    "user": "Ashen",
+    "timestamp": "2026-11-23T02:35:18.052Z",
+    "deletedLevels": [
+        {
+            "filename": "cops",
+            "position": 19,
+            "data": {
+                "id": 151256235,
+                "name": "Cops",
+                "author": "Ashen",
+                "creators": [
+                    "Ashen"
+                ],
+                "verifier": "Ashen",
+                "verification": "photo",
+                "percentToQualify": 100,
+                "password": "free to copy",
+                "records": [
+                    {
+                        "percent": 100,
+                        "user": "masterramulan",
+                        "link": "https://youtu.be/EGAK1cKxg_M",
+                        "hz": 240,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/tmNqn6X0stc",
+                        "hz": 320,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "Jezikk12",
+                        "link": "https://youtu.be/anAR6mw3km0",
+                        "hz": 240,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "aiddan",
+                        "link": "https://medal.tv/games/geometry-dash/clips/nOf5IH4ZtO4HSshgC?invite=cr-MSxXYmksNDk3MDk5MjI4\ncops",
+                        "hz": 240,
+                        "mobile": false
+                    }
+                ]
+            }
+        },
+        {
+            "filename": "time_travel_chicken",
+            "position": 23,
+            "data": {
+                "id": 151197172,
+                "name": "time travel chicken",
+                "author": "Ashen",
+                "creators": [
+                    "Ashen"
+                ],
+                "verifier": "Ashen",
+                "verification": "no",
+                "percentToQualify": 56,
+                "password": "Free to Copy",
+                "records": [
+                    {
+                        "percent": 100,
+                        "user": "masterramulan",
+                        "link": "https://youtu.be/4gKzShfVYtY?si=1hJvqipV1e1a-zar",
+                        "hz": 240,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "Aiddan",
+                        "link": "https://medal.tv/games/geometry-dash/clips/nNvoaNVnLE2YqDwvf?invite=cr-MSx1NWosNDk3MDk5MjI4",
+                        "hz": 240,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "ClifreYt",
+                        "link": "https://medal.tv/games/geometry-dash/clips/nNBEceV4kcTTKLaYq?invite=cr-MSxtRjEsNTY2OTA0NTA0",
+                        "hz": 360,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "qx3",
+                        "link": "none",
+                        "hz": 60,
+                        "mobile": true
+                    },
+                    {
+                        "percent": 100,
+                        "user": "Ayaan",
+                        "link": "https://youtu.be/N-2pAjxxdiE",
+                        "hz": 100,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "Jezikk12",
+                        "link": "https://youtu.be/eGoI0GUZI9Q",
+                        "hz": 240,
+                        "mobile": false
+                    },
+                    {
+                        "percent": 100,
+                        "user": "T00b1a5",
+                        "link": "https://youtu.be/OTVjrL2W9mM",
+                        "hz": 320,
+                        "mobile": false
+                    }
+                ]
+            }
+        }
+    ],
+    "strippedRecords": [
+        {
+            "filename": "CSC",
+            "recordIndex": 0,
+            "record": {
+                "percent": 100,
+                "user": "Ashen",
+                "link": "a",
+                "hz": 240,
+                "mobile": true
+            }
+        },
+        {
+            "filename": "chickaletor",
+            "recordIndex": 0,
+            "record": {
+                "percent": 100,
+                "user": "ashen",
+                "link": "ayaan",
+                "hz": 240,
+                "mobile": true
+            }
+        },
+        {
+            "filename": "chicken_h3ll",
+            "recordIndex": 2,
+            "record": {
+                "percent": 100,
+                "user": "ashen",
+                "link": "photo",
+                "hz": 240,
+                "mobile": true
+            }
+        },
+        {
+            "filename": "hellshine",
+            "recordIndex": 1,
+            "record": {
+                "percent": 100,
+                "user": "Ashen",
+                "link": "ayaan proof plus pic",
+                "hz": 240,
+                "mobile": true
+            }
+        },
+        {
+            "filename": "swing_carried",
+            "recordIndex": 1,
+            "record": {
+                "percent": 100,
+                "user": "Ashen",
+                "link": "ayaan proof",
+                "hz": 240,
+                "mobile": true
+            }
+        },
+        {
+            "filename": "thinking_chick_ii",
+            "recordIndex": 1,
+            "record": {
+                "percent": 100,
+                "user": "ashen",
+                "link": "ayaan",
+                "hz": 240,
+                "mobile": true
+            }
+        },
+        {
+            "filename": "triple_consistenty",
+            "recordIndex": 2,
+            "record": {
+                "percent": 100,
+                "user": "ashen",
+                "link": "ayaan",
+                "hz": 240,
+                "mobile": true
+            }
+        }
+    ]
+}
